@@ -1,0 +1,50 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>	
+<body class="invite"><br><br>
+	<center><h1>Create your Invitation...</h1></center><br><br>
+	<form method="post" action="/preview">
+		<center><input type="text" name="invitation_name" placeholder="INVITATION NAME" required><br>
+		<strong>Note:</strong>Invitation should be of one word only<br><br></center>
+	<div class="Invitation">
+		<br>
+			<center><input type="text" name="Invitation_header" placeholder="INVITATION HEADER" required><br><br></center>
+			<select name="head_font_face" style="margin-left: 50px">
+				<option value="Calibri">Calibri</option>
+  				<option value="Georgia">Georgia</option>
+  				<option value="Ink free">Ink free</option>
+  				<option value="Verdana">Verdana</option>
+			</select>
+			<input type="number" name="head_font_size" min="20" max="50" value="20" style="margin-left: 280px">
+	</div><br><br>
+	<div class="Invitation">
+		<br>
+			<center><input type="text" name="Invitation_body" placeholder="INVITATION BODY" required><br><br></center>
+			<select name="body_font_face" style="margin-left: 50px">
+				<option value="Calibri">Calibri</option>
+  				<option value="Georgia">Georgia</option>
+  				<option value="Ink free">Ink free</option>
+  				<option value="Verdana">Verdana</option>
+			</select>
+			<input type="number" name="body_font_size" min="10" max="30" value="10" style="margin-left: 280px">
+			</div><br><br>
+	<div class="Invitation">
+		<br>
+			<center><input type="text" name="Invitation_footer" placeholder="INVITATION FOOTER" required><br><br></center>
+			<select name="foot_font_face" style="margin-left: 50px">
+				<option value="Calibri">Calibri</option>
+  				<option value="Georgia">Georgia</option>
+  				<option value="Ink free">Ink free</option>
+  				<option value="Verdana">Verdana</option>
+			</select>
+			<input type="number" name="foot_font_size" min="20" max="30" value="20" style="margin-left: 280px">
+			</div><br><br><br>
+	<div class="Invitation-submit">
+	<center>
+			<input type="submit" name="preview" value="PREVIEW">
+	</center>
+	</div>
+</form>
+</body>
+</html>

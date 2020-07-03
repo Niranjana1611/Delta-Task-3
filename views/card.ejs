@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>  
+<body style="background-color: #7CE9FB"><br><br>
+   <form method="get" action="/home">
+      <input type="submit" name="home" value="HOME" style="padding: 7px 20px;font-size: 1.06em;background-color: #0796cf;color: #fff;border: 1px solid #0285b9;cursor: pointer;margin-top: 4px; margin-left: 1300px">
+   </form>
+   <br>
+   <center><h1 class="greeting">YOUR INVITATIONS</h1></center>
+   <br>
+   <div>
+      <% for(var i=0; i<contacts.length; i++) {%>
+         <div style="background-color: white; margin-right: 200px; margin-left: 200px; border: solid;"><center><br><br>
+            <font>Invitation Name: <%= contacts[i].invitationname %></font><br><br>
+            <div style="font-family: <%= contacts[i].invheader_font %>; font-size: <%= contacts[i].invheader_size %>; "><%= contacts[i].invheader %></div><br><br>
+            <div style="font-family: <%= contacts[i].invbody_font %>; font-size: <%= contacts[i].invbody_size %>; "><%= contacts[i].invbody %></div><br><br>
+            <div style="font-family: <%= contacts[i].invfooter_font %>; font-size: <%= contacts[i].invfooter_size %>; "><%= contacts[i].invfooter %></div><br><br>
+
+         </center></div><br><br>
+        <% } %>
+   </div>
+</body>
+</html>

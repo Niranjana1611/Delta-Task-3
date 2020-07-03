@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>	
+<body style="background-color: #7CE9FB"><br><br>
+	<form method="get" action="/home">
+		<input type="submit" name="home" value="HOME" style="padding: 7px 20px;font-size: 1.06em;background-color: #0796cf;color: #fff;border: 1px solid #0285b9;cursor: pointer;margin-top: 4px; margin-left: 1300px">
+	</form>
+   <br>
+   <center><h1 class="greeting">REPLIES FROM PEOPLE YOU HAD INVITED</h1></center>
+   <br>
+	<center><table style="border-collapse: collapse; padding: 10px; background-color: #7CE9FB;">
+      <tr>
+         <th>INVITATION NAME</th>
+         <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+         <th>RECEIVER ROLLNO</th>
+         <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+         <th>RECEIVER NAME</th>
+         <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+         <th>THEIR DECISION</th>
+		<% for(var i=0; i<contacts.length; i++) {%>
+         <tr>
+         	<td id="rec_roll"><%= contacts[i].invitationname %></td>
+         	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+         	<td id="rec_name"><%= contacts[i].rec_rollno %></td>
+         	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+         	<td id="rec_invname"><%= contacts[i].rec_name %></td>
+         	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td id="rec_acc"><%= contacts[i].decision %></td>
+			</tr>
+      <% } %>
+	</table></center>
+</body>
+</html>

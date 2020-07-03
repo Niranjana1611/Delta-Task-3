@@ -1,0 +1,36 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>	
+<body class="invite">
+	<br>
+	<a style="float: right" href="/loggout">LOGGOUT</a>
+	<br><br>
+	<center><h1 class="greeting">Make your own Invitation!</h1></center>
+	<br><br><br><br>
+	<img src = "tenor-1.gif">
+	<div class="about">Hello <%= name %>!<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This website will help you to create your invitation, where you can add your event name, date, venue, time, etc. <br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will be able to change the font face and size in your invitation.<br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can also preview and send it your friends and let you know whether they accepted or not with the help of REPLIES option.<br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can also accept/reject you friends invitation with the help of RECEIVED INVITATIONS option<br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will be able to see all the invitations that you have created through INVITATIONS option<br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You can create your own invitation... Come on! why to wait hit the button given below "CREATE INVITATION" 
+	</div>
+	<br><br>
+	<form method="get" action="/create" class="create">
+			<input type="submit" name="create" value="CREATE INVITATION">
+	</form>
+	<form method="get" action="/invitations" class="invitations">
+			<input type="submit" name="invitations" value="INVITATIONS">
+	</form>
+	<form method="get" action="/rec_invites" class="rec_invites">
+			<input type="submit" name="rec_invites" value="RECEIVED INVITATIONS">
+	</form>
+	<form method="get" action="/sent_invites" class="sent_invites">
+			<input type="submit" name="sent_invites" value="REPLIES">
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>	
+<body class="invite"><br><br>
+	<div class="card">
+	<center>
+		<br><br>
+		<div style="font-family: <%=h_face%>; font-size: <%=h_size%>; "><%= inv_h %></div><br><br>
+		<div style="font-family: <%=b_face%>; font-size: <%=b_size%>; "><%= inv_b %></div><br><br>
+		<div style="font-family: <%=f_face%>; font-size: <%=f_size%>; "><%= inv_f %></div><br><br>
+			
+	</center>
+	</div>
+	<div class="sending">
+	<center>
+		<form method="post" action="/send_to">
+			<input type="submit" name="send_to_card" value="SEND TO">
+		</form>
+	</center>
+	</div>
+</body>
+</html>

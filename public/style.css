@@ -1,0 +1,202 @@
+* {padding: 0; margin: 0;}
+
+.index
+{
+    background-color: black;
+}
+.invite
+{
+    background-color: #7CE9FB;
+}
+
+.text {
+  font-size: 72px;
+  background: -webkit-linear-gradient(lightblue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #fff;    }
+    49%{    color: cyan; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #0ff;    }
+}
+table, table td, table tr
+{
+	background-color: grey;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table
+{
+    background-color: grey;
+}
+
+.login{
+	margin-left: 400px;
+}
+
+.register{
+	margin-right: 400px;
+}
+
+.create
+{
+    float: left;
+    margin-left: 100px;
+    padding: 20px 20px 50px 20px;
+    background-color: #7CE9FB;
+}
+
+.invitations
+{
+    float: left;
+    margin-left: 100px; 
+    padding: 20px 20px 50px 20px;
+    background-color: #7CE9FB;
+}
+
+.save
+{
+    padding: 20px 20px 50px 20px;
+    background-color: #7CE9FB;
+}
+
+.preview
+{
+	float: right;
+	margin-right: 200px; 
+    padding: 20px 20px 50px 20px;
+    background-color: #7CE9FB;
+}
+
+.sent_invites
+{
+    float: center;
+    margin-right: 600px; 
+    padding: 20px 20px 50px 20px;
+    background-color: #7CE9FB;
+}
+
+.rec_invites
+{
+    float: right;
+    margin-right: 200px; 
+    padding: 20px 20px 50px 20px;
+    background-color: #7CE9FB;
+}
+
+.login, .register
+{
+    padding: 20px 20px 50px 20px;
+    border: 1px solid #ccc;
+    background-color: grey;
+}
+.login
+{
+    float: left;
+}
+.register
+{
+    float: right;
+}
+
+input[type="text"], input[type="password"], input[type="email"]
+{
+    padding: 8px 5px;
+    margin: 0 0 5px 5px;
+    min-width: 270px;
+    font-size: 1.05em;
+    background-color: #F5F5F5;
+    border: 1px solid #ccc;
+}
+input[type="submit"]
+{
+    float: right;
+    padding: 7px 20px;
+    font-size: 1.06em;
+    background-color: #0796cf;
+    color: #fff;
+    border: 1px solid #0285b9;
+    cursor: pointer;
+    margin-top: 4px;
+}
+input[type="text"]:focus , input[type="password"]:focus , input[type="email"]:focus {
+    background-color:#fff;
+}
+input[type="submit"]:hover
+{
+    background-color: #0fa3dd;
+    border-color: 1px solid #098ec2;
+}
+
+form
+{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+textarea
+{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding: 10px;
+    resize: vertical;   
+}
+
+.greeting
+{
+    color: red;
+    font-size: 50px;
+    font-family: ink free;
+    
+}
+.about{
+	margin-left: 100px;
+	margin-right: 750px;
+	color: purple;
+	font-size: 23px;
+	font-family: georgia;
+}
+
+img{
+	float: right;
+	margin-right: 100px;
+}
+
+.invitation{
+	margin-right: 300px;
+	margin-left: 300px;
+	background-color: white;
+	border: solid;
+}
+
+.invitation-submit{
+	margin-right: 300px;
+	margin-left: 300px;
+}
+
+.card
+{
+    background-color: white;
+    margin-right: 200px;
+    margin-left: 200px;
+    border: solid;
+}
+
+.sending{
+	margin-right: 200px;
+	margin-left: 200px;
+}
+
+.send-to{
+    background-color: #7CE9FB;
+}
